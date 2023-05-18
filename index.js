@@ -1,50 +1,28 @@
-$(document).on("scroll", function() {
-    
+// Import the Firebase SDK
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
-  var $pageTop = $(document).scrollTop();
-  var $pageBottom = $pageTop + $(window).height();
-  
- 
-  var $cards = $('.card');
-  var $contact = $('.contact-div');
+// Your Firebase configuration object
+const firebaseConfig = {
+  // ...
+};
 
-  
-  for (let i = 0; i < $cards.length; i++) {
-      let card = $cards[i];
-      
-     if ($(card).position().top < $pageBottom) {
-         $(card).addClass("visible");
-     }
-  }
-  
-  if ($($contact).position().top < $pageBottom) {
-      $($contact).addClass("visible");
-  }
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+
+// Get the team ID and name from the user
+const teamId = prompt("Please enter your team ID:");
+const teamName = prompt("Please enter your team name:");
+
+// Store the team ID and name in Firebase
+set(ref(db, "teams/" + teamId), {
+  name: teamName,
+  id: teamId
+})
+.then(() => {
+  console.log("Team data added successfully");
+})
+.catch((error) => {
+  console.error(error);
 });
-
-
-
-
-
-$(".btn1").click(function(){
-  $(".cc2,.cc3").addClass("test");
-});
-
-$(".btn2").click(function(){
-  $(".cc1,.cc3").addClass("test");
-});
-
-$(".btn3").click(function(){
-  $(".cc2,.cc1").addClass("test");
-});
-
-
-// $(".btn1").onclick(function(){
-//     alert(x);
-//     var $c1 = $('.c1');
-//     $(c1).addClass("test");
-  
-// })
-
-// function clicked(x){
-
