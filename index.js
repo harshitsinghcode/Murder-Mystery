@@ -1,36 +1,50 @@
-// Pop-up screen
-const popup = document.getElementById("popup");
+$(document).on("scroll", function() {
+    
 
-// Open the pop-up screen when the page loads
-window.onload = function () {
-  popup.style.display = "block";
-};
+  var $pageTop = $(document).scrollTop();
+  var $pageBottom = $pageTop + $(window).height();
+  
+ 
+  var $cards = $('.card');
+  var $contact = $('.contact-div');
 
-// Close the pop-up screen when the user clicks the close button
-function closePopup() {
-  popup.style.display = "none";
-}
-
-// Handle form submission
-const form = document.getElementById("team-form");
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  // Get the team code and name from the form
-  const teamCode = document.getElementById("team-code").value;
-  const teamName = document.getElementById("team-name").value;
-
-  // Store the team code and name in MongoDB
-  fetch("/store-team", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ teamCode, teamName }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      // Close the pop-up screen
-      closePopup();
-    })
-    .catch((error) => console.error(error));
+  
+  for (let i = 0; i < $cards.length; i++) {
+      let card = $cards[i];
+      
+     if ($(card).position().top < $pageBottom) {
+         $(card).addClass("visible");
+     }
+  }
+  
+  if ($($contact).position().top < $pageBottom) {
+      $($contact).addClass("visible");
+  }
 });
+
+
+
+
+
+$(".btn1").click(function(){
+  $(".cc2,.cc3").addClass("test");
+});
+
+$(".btn2").click(function(){
+  $(".cc1,.cc3").addClass("test");
+});
+
+$(".btn3").click(function(){
+  $(".cc2,.cc1").addClass("test");
+});
+
+
+// $(".btn1").onclick(function(){
+//     alert(x);
+//     var $c1 = $('.c1');
+//     $(c1).addClass("test");
+  
+// })
+
+// function clicked(x){
+

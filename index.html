@@ -4,112 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Murder Mystery Website</title>
 
-    <title>Murder Mystery</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font -->
+
+
 </head>
 
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img src="assets/img/logo.png" alt="" class="nav__logo-img">
-            </a>
+    <!-- Navbar -->
+    <div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
 
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">Stage 1</a>
-                    </li>
 
-                    <li class="nav__item">
-                        <a href="#trick" class="nav__link">Stage 2</a>
-                    </li>
 
-                    <li class="nav__item">
-                        <a href="#new" class="nav__link">Stage 3</a>
-                    </li>
 
-                    <p href="#" class="button button--ghost">Team Sherlock</p>
-                </ul>
+    </div>
 
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
+    <!-- Title -->
+
+    <div id="Title">
+        <div class="row">
+            <div class="col-12">
+                <h1>Murder Mystrey</h1>
+            </div>
+            <div class="col">
+                <img src="FYI.jpg" width="200px" alt="" style="border-radius: 100%;">
+            </div>
+
+            <div class="col">
+                <h4>Unravel the Secrets and Solve the Murder in an Interactive Online Mystery Experience.</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Stage 1 - Quiz -->
+    <div id="Stage-1">
+        <div class="header">Stage 1</div>
+        <div class="container">
+
+            <div class="c1 text-light border-light">
+                <img class="card-img-top" src="https://images.alphacoders.com/727/727330.jpg">
+                <div class="choices card-body">
+                    <p class="card-text"> "Welcome to the Murder Mystery Quiz! Test your detective skills
+                        and see if you can solve the mysterious crime. Choose your answers carefully,
+                        as the fate of the investigation depends on your choices. Good luck!"</p>
+                    <p class="card-text">Click the button below to take the quiz:</p>
+                    <a href="https://quiz-link.com" class="btn btn-outline-light">Take Quiz</a>
                 </div>
-
-                <img src="assets/img/nav-img.png" alt="" class="nav__img">
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div>
 
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section>
-            <div class="home__content grid">
-                <div class="home__group">
-                    <img src="assets/img/home2-img.png" alt="" class="home__img">
-                    <div class="home__indicator"></div>
+    <hr>
 
-                    <div class="home__details-img">
-                        <h4 class="home__details-title">Team - Sherlock</h4>
-                        <span class="home__details-subtitle">No words can describe them</span>
+    <!-- Stage 2 - Choices -->
+    <div id="Stage-2">
+        <div class="header">Stage 2</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card c2 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">"The Haunted Mansion"</h5>
+                            <hr>
+                            <p class="p1 card-text">"Explore the eerie corridors of the haunted mansion,
+                                where the murder took place. Search for clues, uncover hidden secrets,
+                                and interact with suspicious characters to unravel the truth behind the
+                                crime."</p>
+                            <a href="s3.html" target="_blank" class="btn btn1 btn-outline-light">Explore Choice 1</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="home__data">
-                    <h3 class="home__subtitle"></h3>
-                    <h1 class="home__title">Welcome <br> Noble Visitors <br></h1>
-                    <h4 class="home__description">
-                        </p>To this digital stage,<br> Where mysteries unfold and crimes engage.</br> Enter, seekers of clues, both cunning and wise,<br> To solve the enigma that behind darkness lies.</br>
-                        <br><br>
-                        </p>
-
-                        <div class="home__buttons">
-                            <a href="#" class="button">Explore Now</a>
-                            <a href="#" class="button--link button--flex">See Leaderboard <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card c3 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">"The Detective's Office"</h5>
+                            <hr>
+                            <p class="p2 card-text">"Step into the shoes of a detective in your virtual office.
+                                Examine case files, review witness statements, and analyze evidence to piece together
+                                the puzzle.
+                                Identify the culprit and bring them to justice?"</p>
+                            <a href="s3.html" target="_blank" class="btn btn2 btn-outline-light">Explore Choice 2</a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card c4 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">"The Crime Scene Investigation"</h5>
+                            <hr>
+                            <p class="p3card-text"> "Become a forensic expert and visit the crime scene. Collect
+                                fingerprints,
+                                analyze blood samples, and reconstruct the events.
+                                Use your expertise to find the missing pieces."</p>
+                            <a href="s3.html" target="_blank" class="btn btn3 btn-outline-light">Explore Choice 3</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
         </div>
-        </section>
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content">
+    </div>
+
+    <hr>
+
+    <!-- Stage-3 -->
+    <div id="Stage-2">
+        <div class="header">Stage 3</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cc1 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">Option-1</h5>
+                            <hr>
+                            <p class="card-text">1. First <br>
+                                2. Second<br>
+                                3. Third</p>
+                            <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__content">
-                    <h3 class="footer__title">Our Services</h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Creating Mysteries</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Calling Wizards</a>
-                        </li>
-
-                    </ul>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card cc1 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">Option-2</h5>
+                            <hr>
+                            <p class="card-text">1. First <br>
+                                2. Second<br>
+                                3. Third</p>
+                            <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
+                        </div>
+                    </div>
                 </div>
-                <span class="footer__copy">&#169; FYI Tech Team</span>
+                <div class="col-lg-4">
+                    <div class="card cc1 text-light">
+                        <div class="choices card-body">
+                            <h5 class="card-title">Option-3</h5>
+                            <hr>
+                            <p class="card-text">1. First <br>
+                                2. Second<br>
+                                3. Third</p>
+                            <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <img src="assets/img/footer1-img.png" alt="" class="footer__img-one">
-                <img src="assets/img/footer2-img.png" alt="" class="footer__img-two">
-        </footer>
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-        </a>
-        <script src="assets/js/main.js"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card cc2 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-1</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card cc2 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-2</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card cc2 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-3</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card cc3 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-1</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card cc3 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-2</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card cc3 text-light">
+                    <div class="choices card-body">
+                        <h5 class="card-title">Option-3</h5>
+                        <hr>
+                        <p class="card-text">1. First <br>
+                            2. Second<br>
+                            3. Third</p>
+                        <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="mm.js"></script>
 </body>
 
 </html>
