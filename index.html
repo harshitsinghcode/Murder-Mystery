@@ -22,237 +22,54 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div>
+    <script>
+        // Ask for team ID and name
+        let teamId = prompt("Please enter your team ID:");
+        let teamName = prompt("Please enter your team name:");
 
+        // Display the team ID and name in a pop-up
+        alert("Welcome, Team " + teamName + "! Your team ID is " + teamId + ".");
+    </script>
 
-
-
-
-    </div>
-
-    <!-- Title -->
-
-    <div id="Title">
-        <div class="row">
-            <div class="col-12">
-                <h1>Murder Mystrey</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Murder Mystery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col">
-                <img src="FYI.jpg" width="200px" alt="" style="border-radius: 100%;">
-            </div>
+        </nav>
+    </header>
 
-            <div class="col">
-                <h4>Unravel the Secrets and Solve the Murder in an Interactive Online Mystery Experience.</h4>
-            </div>
-
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- Stage 1 - Quiz -->
-    <div id="Stage-1">
-        <div class="header">Stage 1</div>
+    <main>
         <div class="container">
-
-            <div class="c1 text-light border-light">
-                <img class="card-img-top" src="https://images.alphacoders.com/727/727330.jpg">
-                <div class="choices card-body">
-                    <p class="card-text"> "Welcome to the Murder Mystery Quiz! Test your detective skills
-                        and see if you can solve the mysterious crime. Choose your answers carefully,
-                        as the fate of the investigation depends on your choices. Good luck!"</p>
-                    <p class="card-text">Click the button below to take the quiz:</p>
-                    <a href="https://quiz-link.com" class="btn btn-outline-light">Take Quiz</a>
-                </div>
-            </div>
-
-
+            <h1>Welcome to the Murder Mystery</h1>
+            <p>Can you solve the mystery?</p>
         </div>
-    </div>
+    </main>
 
-    <hr>
-
-    <!-- Stage 2 - Choices -->
-    <div id="Stage-2">
-        <div class="header">Stage 2</div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card c2 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">"The Haunted Mansion"</h5>
-                            <hr>
-                            <p class="p1 card-text">"Explore the eerie corridors of the haunted mansion,
-                                where the murder took place. Search for clues, uncover hidden secrets,
-                                and interact with suspicious characters to unravel the truth behind the
-                                crime."</p>
-                            <a href="s3.html" target="_blank" class="btn btn1 btn-outline-light">Explore Choice 1</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card c3 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">"The Detective's Office"</h5>
-                            <hr>
-                            <p class="p2 card-text">"Step into the shoes of a detective in your virtual office.
-                                Examine case files, review witness statements, and analyze evidence to piece together
-                                the puzzle.
-                                Identify the culprit and bring them to justice?"</p>
-                            <a href="s3.html" target="_blank" class="btn btn2 btn-outline-light">Explore Choice 2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card c4 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">"The Crime Scene Investigation"</h5>
-                            <hr>
-                            <p class="p3card-text"> "Become a forensic expert and visit the crime scene. Collect
-                                fingerprints,
-                                analyze blood samples, and reconstruct the events.
-                                Use your expertise to find the missing pieces."</p>
-                            <a href="s3.html" target="_blank" class="btn btn3 btn-outline-light">Explore Choice 3</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Murder Mystery</p>
         </div>
-    </div>
+    </footer>
 
-    <hr>
-
-    <!-- Stage-3 -->
-    <div id="Stage-2">
-        <div class="header">Stage 3</div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card cc1 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">Option-1</h5>
-                            <hr>
-                            <p class="card-text">1. First <br>
-                                2. Second<br>
-                                3. Third</p>
-                            <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card cc1 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">Option-2</h5>
-                            <hr>
-                            <p class="card-text">1. First <br>
-                                2. Second<br>
-                                3. Third</p>
-                            <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card cc1 text-light">
-                        <div class="choices card-body">
-                            <h5 class="card-title">Option-3</h5>
-                            <hr>
-                            <p class="card-text">1. First <br>
-                                2. Second<br>
-                                3. Third</p>
-                            <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="card cc2 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-1</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card cc2 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-2</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card cc2 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-3</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="card cc3 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-1</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice1-link.com" class="btn btn-outline-light">Explore Choice 1</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card cc3 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-2</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice2-link.com" class="btn btn-outline-light">Explore Choice 2</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card cc3 text-light">
-                    <div class="choices card-body">
-                        <h5 class="card-title">Option-3</h5>
-                        <hr>
-                        <p class="card-text">1. First <br>
-                            2. Second<br>
-                            3. Third</p>
-                        <a href="https://choice3-link.com" class="btn btn-outline-light">Explore Choice 3</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="mm.js"></script>
 </body>
 
 </html>
