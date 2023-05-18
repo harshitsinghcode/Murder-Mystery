@@ -22,6 +22,122 @@
 </head>
 
 <body>
+    <script>
+        // Ask for team ID and name
+        let teamId = prompt("Please enter your team ID:");
+        let teamName = prompt("Please enter your team name:");
+
+        // Display the team ID and name in a pop-up
+        alert("Welcome, Team " + teamName + "! Your team ID is " + teamId + ".");
+</script>
+        <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAkBicCi9pnVZuULT2Nm3rSSAoSGtxnW_Q",
+    authDomain: "murder-mystery-4d783.firebaseapp.com",
+    projectId: "murder-mystery-4d783",
+    storageBucket: "murder-mystery-4d783.appspot.com",
+    messagingSenderId: "588142918545",
+    appId: "1:588142918545:web:8c0272b4a1f7cbb272b830",
+    measurementId: "G-RHTV2JJ13B"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+    </script>
+       <script type="module">
+
+        //THIS IS WHERE YOU PASTE THE CODE TO CONNECT TO YOUR OWN DATABASE
+        //Copy and paste the CDN bit of code from your app that you created on Firebase.
+        //The script tag above is already there, so careful not to have duplicate script tags.
+        //After you've copied and pasted, just delete the unnecessary script tags. 
+   
+
+        import {getDatabase, ref, get, set, child, update, remove}
+        from //Copy and Paste the URL from near the top of the CDN you pasted in from firebase
+        // (the one where you imported "initializeApp" from),
+        //but change "firebase-app" to "firebase-database"
+        
+
+        const db = getDatabase();
+
+        var teamI = document.querySelector("#teamId");
+        var teamNam = document.querySelector("#teamName");
+      
+
+        
+
+        function InsertData() {
+            set(ref(db, "People/"+ enterID.value),{
+                Name: enterName.value,
+                ID: enterID.value,
+                Age: enterAge.value
+            })
+            .then(()=>{
+                alert("Data added successfully");
+            })
+            .catch((error)=>{
+                alert(error);
+            });
+        }
+
+        function FindData() {
+            const dbref = ref(db);
+
+            get(child(dbref, "People/" + findID.value))
+            .then((snapshot)=>{
+                if(snapshot.exists()){
+                    findName.innerHTML = "Name: " + snapshot.val().Name;
+                    findAge.innerHTML = "Age: " + snapshot.val().Age;
+                } else {
+                    alert("No data found");
+                }
+            })
+            .catch((error)=>{
+                alert(error)
+            })
+            
+        }
+
+        function UpdateData(){
+            update(ref(db, "People/"+ enterID.value),{
+                Name: enterName.value,
+                Age: enterAge.value
+            })
+            .then(()=>{
+                alert("Data updated successfully");
+            })
+            .catch((error)=>{
+                alert(error);
+            });
+        }
+
+        function RemoveData(){
+            remove(ref(db, "People/"+ enterID.value))
+            .then(()=>{
+                alert("Data deleted successfully");
+            })
+            .catch((error)=>{
+                alert(error);
+            });
+        }
+
+        insertBtn.addEventListener('click', InsertData);
+        updateBtn.addEventListener('click', UpdateData);
+        removeBtn.addEventListener('click', RemoveData);
+        findBtn.addEventListener('click', FindData);
+
+      </script>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -52,17 +168,6 @@
         <div class="container">
             <h1>Welcome to the Murder Mystery</h1>
             <p>Can you solve the mystery?</p>
-            <form>
-                <div class="mb-3">
-                    <label for="teamId" class="form-label">Team ID</label>
-                    <input type="text" class="form-control" id="teamId" name="teamId">
-                </div>
-                <div class="mb-3">
-                    <label for="teamName" class="form-label">Team Name</label>
-                    <input type="text" class="form-control" id="teamName" name="teamName">
-                </div>
-                <button type="button" class="btn btn-primary" id="submitBtn">Submit</button>
-            </form>
         </div>
     </main>
 
@@ -72,37 +177,6 @@
         </div>
     </footer>
 
-    <script type="module">
-        // Initialize Firebase
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
-
-        const firebaseConfig = {
-            // Your web app's Firebase configuration
-            // ...
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const db = getDatabase();
-
-        const submitBtn = document.getElementById("submitBtn");
-        submitBtn.addEventListener("click", () => {
-            const teamId = document.getElementById("teamId").value;
-            const teamName = document.getElementById("teamName").value;
-
-            // Store team data in Firebase
-            set(ref(db, "teams/" + teamId), {
-                name: teamName,
-                id: teamId
-            })
-            .then(() => {
-                alert("Team data added successfully");
-            })
-            .catch((error) => {
-                alert(error);
-            });
-        });
-    </script>
 </body>
 
 </html>
