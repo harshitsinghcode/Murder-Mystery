@@ -1,139 +1,149 @@
+
+
+
 body {
-  background-image: url("");
-  background-position: center;
-  background-attachment: fixed;
-  background-color: black;
-  color: white;
-  background: linear-gradient(141deg, #000 15%, rgba(212, 0, 0, 1) 51%, #000 75%);
+    background-image: url("");
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    background: linear-gradient(141deg, #000 15%, rgba(212, 0, 0, 1) 51%, #000 75%);
 }
 
 .card {
-  margin: 20px;
+    margin: 20px;
 }
 
 h1 {
-  padding: 5%;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
+    padding: 5%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 h4 {
-  padding: 10%;
-  text-align: center;
-  font-size: 1rem;
+    padding: 10%;
+    text-align: center;
+    font-size: 1rem;
 }
 
 h5 {
-  padding: 5%;
+    padding: 5%;
 }
 
 p {
-  font-size: 1rem;
-  padding: 3% 5%;
+    font-size: 1rem;
+    padding: 3% 5%;
 }
 
 hr{
-  color: #ED2B2A;
-  width: 50%;
-  border-width: 3px;
-  margin: auto;
+    color: #ED2B2A;
+    width: 50%;
+    border-width: 3px;
+    margin: auto;
 
 }
 
 /* Title */
 
 #Title {
-  padding: 10% 15%;
-  /* background-color: black; */
-  /* background-color: #0C134F; */
+    padding: 10% 15%;
+    /* background-color: black; */
+    /* background-color: #0C134F; */
 }
 
 /* Stage-1 */
 
 #Stage-1 {
-  padding: 10% 20%;
+    padding: 10% 20%;
 }
 
 .header{
-  text-align: center;
-  font-size: 2rem;
-  padding-bottom: 50px ;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 50px ;
 }
 
 
 .c1 {
-  padding-bottom: 2rem;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  border-radius: 1rem;
-  border: 1px solid transparent;
-  margin: 3px 5px;
+    padding-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    margin: 3px 5px;
 
-  backdrop-filter: blur(1rem);
-  box-shadow: 1.3 rem 1.3 rem 1.3rem rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3 rem 1.3 rem 1.3rem rgba(0, 0, 0, 0.5);
 }
 
 .card-img-top {
-  position: relative;
-  z-index: 2;
-  transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
 }
 
 .c1:hover .card-img-top {
-  transform: scale(1.05);
-  opacity: 0.6;
+    transform: scale(1.05);
+    opacity: 0.6;
 }
 
 /* Stage-2 */
 
 #Stage-2 {
-  margin-top: 50px;
-  padding: 10% 15%;
-  /* background-color: #5C469C; */
+    margin-top: 50px;
+    padding: 10% 15%;
+    /* background-color: #5C469C; */
 }
 
 .choices {
-  text-align: center;
+    text-align: center;
 }
 
 .card {
-  background-color: black;
-  box-shadow:5px 5px 20px #D21312 ;
-  transition: 0.3s;
+    background-color: black;
+    box-shadow:5px 5px 20px #D21312 ;
+    transition: 0.3s;
 }
 
 .card:hover{
-  transform: scale(1.1);
-  /* opacity: 0.5; */
+    transform: scale(1.1);
+    /* opacity: 0.5; */
 }
 
 @keyframes anim {
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 
 .card{
-  opacity: 0;
-  transform: translate(0, 20px); 
-  transition: 1s;
+    opacity: 0;
+    transform: translate(0, 20px); 
+    transition: 1s;
 }
 
 .visible {
-  opacity: 1;
-  transform: translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 @keyframes t{
-  0%{background-color: black;}
-  100%{background-color: wheat;}
-  
+    0%{background-color: black;}
+    100%{background-color: wheat;}
+    
 }
 
 .test{
-  /* background-color: aliceblue ;     */
-  /* color: #000; */
-  opacity: 0.2;
+    /* background-color: aliceblue ;     */
+    /* color: #000; */
+    opacity: 0.2;
 }
+
+
+
+
+
+
+
