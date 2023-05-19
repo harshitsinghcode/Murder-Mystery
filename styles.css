@@ -4,7 +4,7 @@ body {
     background-image: url("");
     background-position: center;
     background-attachment: fixed;
-    background: linear-gradient(141deg, #000 15%, rgba(212, 0, 0, 1) 80%, #000 90%);    
+    background: linear-gradient(141deg, #000 15%, rgba(212, 0, 0, 1) 51%, #000 75%);    
     color: white;
     overflow-x: hidden;
 }
@@ -156,7 +156,7 @@ hr{
 .c2{
     opacity: 0;
     transform: translate(0, 20px); 
-    transition: 1s;
+    transition: 0.3s;
     padding: 0 5% 5%;
 }
 
@@ -180,15 +180,7 @@ hr{
 .img-3:hover{
     transform: scale(1.05);
 }
-@keyframes t{
-    0%{background-color: black;}
-    100%{background-color: wheat;}
-    
-}
 
 .test{
-    /* opacity: 0.2; */
     display: none;
 }
-
-
