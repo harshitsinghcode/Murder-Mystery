@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 $(document).on("scroll", function() {
     
 
@@ -32,35 +25,19 @@ $(document).on("scroll", function() {
 
 
 
-
-$(".btn1").click(function(){
-    $(".cc2,.cc3").addClass("test");
-});
-
-$(".btn2").click(function(){
-    $(".cc1,.cc3").addClass("test");
-});
-
-$(".btn3").click(function(){
-    $(".cc2,.cc1").addClass("test");
-});
-
-
-// $(".btn1").onclick(function(){
-//     alert(x);
-//     var $c1 = $('.c1');
-//     $(c1).addClass("test");
-    
-// })
-
-// function clicked(x){
-
-//     // switch (x) {
-//     //     case value:
-            
-//     //         break;
-    
-//     //     default:
-//     //         break;
-//     // }
-
+$(document).on("click", function(event){
+    var clsname = event.target.id;
+    // alert(clsname);
+    if (clsname=="B1") {
+        $(".cc2,.cc3").addClass("test");
+        $('.cc2', '.cc3').prop('disabled', true);       
+    }
+    else if (clsname=="B2") {
+        $(".cc1,.cc3").addClass("test");
+        $('.cc1', '.cc3').prop('disabled', true);       
+    }
+    else if (clsname=="B3") {
+        $(".cc1,.cc2").addClass("test");
+        $('.cc1', '.cc2').prop('disabled', true);       
+    }
+  });
