@@ -1,5 +1,6 @@
-## Murder Mystery Website
+# Murder Mystery Website
 This is a website for an event called Murder Mystery by the FYI Tech Team. The website has been created using HTML, CSS, and JavaScript. It consists of different stages, each of which involves a different activity related to solving a murder mystery.
+
 
 ![Murder Mystery](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieGEj2lLGy47CkA-XbCNc6b5uRpDnRFHOjypWlHfLevxhsII3-V-Rd79NGHshHzY8njsQZQOJMqdEkHQsleOdlpVkUjKWRTGSvOjk0bB1I_K2IvRCbAPNtBuPEh27u6W6XgHp1O3NqqaspATQBBwbt3oM-rLUjlMd1IgmotXLNyoLWH_95UT-id8Al/s1920/Screenshot%20(42).png)
 
