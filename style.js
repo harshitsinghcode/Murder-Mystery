@@ -42,19 +42,4 @@ $(document).on("click", function(event){
     }
   });
 
-$(document).on("click", function(event){
-    var clsname = event.target.id;
-    // alert(clsname);
-    if (clsname=="BB1") {
-        $(".c22,.c33").addClass("test");
-        $('.c22', '.c33').prop('disabled', true);       
-    }
-    else if (clsname=="BB2") {
-        $(".c11,.c33").addClass("test");
-        $('.c11', '.c33').prop('disabled', true);       
-    }
-    else if (clsname=="BB3") {
-        $(".c11,.c22").addClass("test");
-        $('.c11', '.c22').prop('disabled', true);       
-    }
-  });
+
